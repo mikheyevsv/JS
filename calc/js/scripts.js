@@ -18,15 +18,18 @@ function calculate() {
     var res1 = inp1.value;
     var res2 = inp2.value;
 
-    if(operation === "+"){
+    if(operation == "+"){
         result = parseInt(res1) + parseInt(res2);
         operation = this.setAttribute("disabled", "disabled");
-
-
-    } else if (operation === "-"){
+    } else if (operation == "-"){
         result = parseInt(res1) - parseInt(res2);
         operation = this.setAttribute("disabled", "disabled");
+    } else if (operation == "*"){
+              result = parseInt(res1) * parseInt(res2);
+              operation = this.setAttribute("disabled", "disabled");
+    } else if (operation == "/"){
+             result = parseInt(res1) / parseInt(res2);
+             operation = this.setAttribute("disabled", "disabled");
     }
-
     res.innerHTML = result;
 }
