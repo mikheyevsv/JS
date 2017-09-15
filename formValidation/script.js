@@ -7,17 +7,18 @@ window.onload = function () {
     var submit = document.querySelector("form input[type=submit]");
 
     document.querySelector("form").onsubmit = function (e) {
-
+        var err = false;
         for(var i = 0; i < fields.length; i++){
             if(fields[i].value === ''){
                 fields[i].classList.add("error");
-                e.preventDefault();
-            }else {
+                err = true;
+            }
+            else {
                 fields[i].classList.remove("error");
             }
         }
-
+        if(err){
+            e.preventDefault();
+        }
     }
-
-
 }

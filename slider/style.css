@@ -1,0 +1,20 @@
+.slider {
+    width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+.slider .photos {
+    position: relative;
+    height: 670px;
+}
+.slider .photos img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.slider .photos .show {
+    opacity: 1;
+}
