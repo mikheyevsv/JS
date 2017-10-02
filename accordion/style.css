@@ -1,0 +1,14 @@
+div {
+    width: 600px;
+    margin: 20px 0;
+}
+.quest, .answer{
+    min-width: 200px;
+    padding: 10px;
+    background-color: #93b1e2;
+}
+
+.answer {
+    display: none;
+    background-color: #e8b9b9;
+}

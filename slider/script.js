@@ -26,7 +26,7 @@ window.onload = function () {
         auto: true,
         buttonPrev: ".slider-2 .buttons .prev",
         buttonNext: ".slider-2 .buttons .next",
-        rate: 5000
+        rate: 3000
     });
     
 }
@@ -56,7 +56,6 @@ function Slider(settings) {
         i++;
 
         if(i >= slider.images.length){
-            console.log(i);
             i = 0;
         }
         slider.images[i].classList.add("show");
